@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The White Beast ($BEAST)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* ちょっとしたアニメーション */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-mono">
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        
+        <div class="mb-8 animate-float">
+            <img src="whitesenpai.png?text=White+Beast" alt="The White Beast" class="rounded-xl border-4 border-white shadow-[0_0_20px_rgba(255,255,255,0.5)] w-64 h-64 object-cover mx-auto">
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tighter">THE WHITE BEAST</h1>
+        <p class="text-gray-400 text-lg mb-8 text-center max-w-md">
+            野獣が帰ってきた。<br>理由は聞くな。ただ白くなっただけだ。
+        </p>
+
+        <div class="bg-gray-900 border border-gray-700 rounded-lg p-4 mb-8 w-full max-w-lg flex flex-col md:flex-row items-center gap-2">
+            <span class="text-green-400 font-bold">CA:</span>
+            <code class="text-xs md:text-sm break-all">GiGw...（ここに本当のCAを入れる）...pump</code>
+        </div>
+
+        <div class="flex gap-4">
+            <a href="#" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300">
+                BUY ON PUMP.FUN
+            </a>
+            <a href="#" class="border border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition duration-300">
+                TELEGRAM
+            </a>
+        </div>
+        
+        <div class="mt-16 text-gray-600 text-sm">
+            $BEAST is a meme coin with no intrinsic value.
+        </div>
+
+    </div>
+</body>
+</html>
