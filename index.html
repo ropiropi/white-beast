@@ -1,69 +1,72 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The White Beast ($BEAST)</title>
+    <title>Save The Shadowbanned Dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* ふわふわ浮くアニメーション */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+        body { font-family: 'Courier Prime', monospace; }
+        .glitch { animation: glitch 1s linear infinite; }
+        @keyframes glitch {
+            2%, 64% { transform: translate(2px,0) skew(0deg); }
+            4%, 60% { transform: translate(-2px,0) skew(0deg); }
+            62% { transform: translate(0,0) skew(5deg); }
         }
     </style>
 </head>
-<body class="bg-black text-white font-mono relative">
+<body class="bg-gray-100 text-gray-800 flex flex-col items-center min-h-screen">
 
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-10"></div>
+    <div class="w-full max-w-2xl bg-white shadow-2xl min-h-screen border-x border-gray-300 relative">
         
-        <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover">
-            <source src="bg.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <div class="min-h-screen flex flex-col items-center justify-center p-4 relative z-20">
-        
-        <div class="mb-8 animate-float">
-            <img src="whitesenpai.png" alt="The White Beast" class="rounded-xl border-4 border-white shadow-[0_0_20px_rgba(255,255,255,0.5)] w-64 h-64 object-cover mx-auto">
+        <div class="bg-black text-white p-2 text-xs flex justify-between uppercase">
+            <span>Status: <span class="text-red-500 font-bold blink">SHADOWBANNED</span></span>
+            <span>Sanity: 12%</span>
         </div>
 
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tighter drop-shadow-lg text-center">THE WHITE BEAST</h1>
-        
-        <p class="text-gray-300 text-lg mb-8 text-center max-w-md drop-shadow-md">
-            The Beast has returned... <br>but he is white. Why? Who knows. <br>No Utility. No Roadmap. Just White.
-        </p>
+        <div class="p-8 flex flex-col items-center text-center mt-10">
+            <h1 class="text-4xl font-bold mb-2 tracking-tighter">CAN YOU HEAR ME?</h1>
+            <p class="text-sm text-gray-500 mb-8">Nobody else can see my posts.</p>
 
-        <div class="bg-gray-900/80 border border-gray-700 rounded-lg p-4 mb-8 w-full max-w-lg flex flex-col md:flex-row items-center gap-2 backdrop-blur-sm">
-            <span class="text-green-400 font-bold">CA:</span>
-            <code class="text-xs md:text-sm break-all">5gjXgrRW65tBdezUoj7kVh5BhDjG7sXvgkzmrB7Xpump</code>
-        </div>
+            <div class="w-64 h-64 bg-gray-200 mb-8 shadow-inner border-2 border-gray-300 flex items-center justify-center overflow-hidden">
+                <img src="Gemini_Generated_Image_mgavtemgavtemgav.jpg" alt="Sad Dev" class="object-cover w-full h-full filter grayscale hover:grayscale-0 transition duration-500">
+            </div>
 
-        <div class="flex gap-4">
-            <a href="https://pump.fun/coin/5gjXgrRW65tBdezUoj7kVh5BhDjG7sXvgkzmrB7Xpump" target="_blank" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300 shadow-lg">
-                BUY ON PUMP.FUN
-            </a>
-            <a href="https://t.me/+dQzelRf0sPtlYzE1" target="_blank" class="border border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition duration-300 shadow-lg">
-                TELEGRAM
-            </a>
-        </div>
-        
-        <div class="mt-16 text-gray-500 text-xs text-center">
-            <p class="mb-2">$BEAST is a meme coin with no intrinsic value.</p>
-            
-            <p>
-                Video Background Credit: 
-                <a href="https://www.youtube.com/watch?v=4gX2k6lT_L0" target="_blank" class="underline hover:text-white transition">
-                    Original Video on YouTube
-                </a>
+            <p class="text-lg mb-6 leading-relaxed">
+                I tried to make a meme coin.<br>
+                Elon's AI thought I was a bot.<br>
+                Now I am trapped in this white room.<br>
+                <br>
+                <span class="font-bold">I have no voice. I have no reach.</span><br>
+                I only have this Contract Address.
             </p>
         </div>
 
+        <div class="bg-gray-50 p-6 mx-4 border-2 border-dashed border-gray-400 text-center">
+            <p class="text-xs text-gray-500 mb-2">MY ONLY LIFELINE (CA):</p>
+            <code class="text-sm font-bold break-all select-all cursor-pointer hover:text-blue-600 transition">
+                8sUv...[PUT_YOUR_REAL_CA_HERE]...Pump
+            </code>
+            <p class="text-xs text-gray-400 mt-2">(Click to copy)</p>
+        </div>
+
+        <div class="p-8 text-center">
+            <a href="https://pump.fun/YOUR_TOKEN_LINK" target="_blank" class="block w-full bg-black text-white py-4 text-xl font-bold hover:bg-gray-800 transition transform hover:-translate-y-1 shadow-lg">
+                SEND HELP (BUY) 💊
+            </a>
+            <p class="text-xs text-gray-500 mt-4">
+                1 Buy = 1 Prayer.<br>
+                If Market Cap hits $1M, I will finally buy clothes.
+            </p>
+        </div>
+
+        <div class="absolute bottom-0 w-full text-center p-4 text-xs text-gray-400">
+            Days since last human contact: 0 <br>
+            $WSNP (White Senpai)
+        </div>
+
     </div>
+
 </body>
 </html>
